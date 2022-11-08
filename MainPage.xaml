@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmarphoneSells.MainPage">
+
+
+    <VerticalStackLayout WidthRequest="600" HeightRequest="400" >
+        <FlexLayout RadioButtonGroup.GroupName="SuggestionsTree" HeightRequest="200"  JustifyContent="SpaceBetween" AlignContent="Center">
+            <VerticalStackLayout WidthRequest="200" HeightRequest="200">
+                <RadioButton Value="35000" x:Name="FirstSug" CheckedChanged="RadioButton_PhoneSelected">
+                    <RadioButton.Content>
+                        <VerticalStackLayout>
+                            <Image Source="dotnet_bot.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center"/>
+                            <Label HorizontalTextAlignment="Center" Text="Стоимость: 35 000р"></Label>
+                        </VerticalStackLayout>
+                    </RadioButton.Content>
+                </RadioButton>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout WidthRequest="200" HeightRequest="200">
+                <RadioButton Value="47000" x:Name="SecondSug"  CheckedChanged="RadioButton_PhoneSelected">
+                    <RadioButton.Content>
+                        <VerticalStackLayout>
+                            <Image Source="dotnet_bot.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center"/>
+                            <Label HorizontalTextAlignment="Center" Text ="Стоимость: 47 000р"></Label>
+                        </VerticalStackLayout>
+                    </RadioButton.Content>
+                </RadioButton>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout WidthRequest="200" HeightRequest="200">
+                <RadioButton Value="75000" x:Name="ThirdSug"  CheckedChanged="RadioButton_PhoneSelected">
+                    <RadioButton.Content>
+                        <VerticalStackLayout>
+                            <Image Source="dotnet_bot.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center"/>
+                            <Label HorizontalTextAlignment="Center" Text="Стоимость: 75 000р"></Label>
+                        </VerticalStackLayout>
+                    </RadioButton.Content>
+                </RadioButton>
+            </VerticalStackLayout>
+        </FlexLayout>
+
+        <FlexLayout RadioButtonGroup.GroupName="StuffTree"  HeightRequest="300" WidthRequest="600" Wrap="Wrap" JustifyContent="SpaceBetween" AlignContent="Center">
+            <VerticalStackLayout WidthRequest="200" HeightRequest="80">
+                <RadioButton Value="2000" CheckedChanged="RadioButton_StuffSelected">
+                    <RadioButton.Content>
+                        <Label HorizontalTextAlignment="Center" Text="Купить симкарту"></Label>
+                    </RadioButton.Content>
+                </RadioButton>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout WidthRequest="200" HeightRequest="80">
+                <RadioButton Value="4000" CheckedChanged="RadioButton_StuffSelected">
+                    <RadioButton.Content>
+                        <Label HorizontalTextAlignment="Center" Text="Зарядка для телефона"></Label>
+                    </RadioButton.Content>
+                </RadioButton>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout WidthRequest="200" HeightRequest="80">
+                <RadioButton Value="200" CheckedChanged="RadioButton_StuffSelected">
+                    <RadioButton.Content>
+                        <Label HorizontalTextAlignment="Center" Text="Годовое обслуживание"></Label>
+                    </RadioButton.Content>
+                </RadioButton>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout WidthRequest="200" HeightRequest="80">
+                <RadioButton Value="500" CheckedChanged="RadioButton_StuffSelected">
+                    <RadioButton.Content>
+                        <Label HorizontalTextAlignment="Center" Text="Защитное стекло"></Label>
+                    </RadioButton.Content>
+                </RadioButton>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout WidthRequest="200" HeightRequest="80">
+                <RadioButton Value="1430" CheckedChanged="RadioButton_StuffSelected">
+                    <RadioButton.Content>
+                        <Label HorizontalTextAlignment="Center" Text="Красивый чехол"></Label>
+                    </RadioButton.Content>
+                </RadioButton>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout WidthRequest="200" HeightRequest="80">
+                <RadioButton Value="250" CheckedChanged="RadioButton_StuffSelected">
+                    <RadioButton.Content>
+                        <Label HorizontalTextAlignment="Center" Text="Брелок"></Label>
+                    </RadioButton.Content>
+                </RadioButton>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout WidthRequest="200" HeightRequest="80">
+                <Label Text="Общая стоимость: " x:Name="Cost"></Label>
+            </VerticalStackLayout>
+
+        </FlexLayout>
+
+
+    </VerticalStackLayout>
+
+</ContentPage>
